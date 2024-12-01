@@ -1,0 +1,13 @@
+-------------
+navegacion
+-------------
+
+npm install @react-navigation/native
+npm install @react-navigation/native-stack
+
+--------
+iconos
+--------
+
+npm install @rneui/themed @rneui/base
+npm install react-native-vector-icons
