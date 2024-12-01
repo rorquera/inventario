@@ -1,0 +1,15 @@
+---------------
+CREAR PROYECTO
+---------------
+
+npx create-expo-app --template
+Escoger Blank y dar un nombre
+
+npx create-expo-app ejemploNavegacion3 --template blank
+npx create-expo-app ejemploNavegacion -t blank
+
+-----------------
+INICIAR PROYECTO
+-----------------
+
+npx expo start
