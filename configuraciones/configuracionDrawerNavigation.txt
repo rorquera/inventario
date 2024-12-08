@@ -1,0 +1,25 @@
+npm install @react-navigation/drawer
+npm install react-native-reanimated
+npm install react-native-safe-area-context
+npm install react-native-gesture-handler
+
+
+--COPIAR EL ARCHIVO Y LUEGO EJECUTAR EL COMANDO
+babel.config.js
+npm install --save-dev babel-plugin-module-resolver
+
+
+--COLOCAR COMO PRIMERA IMPORTACION EN EL App.js
+import "react-native-gesture-handler";
+
+
+------------------------
+--EN CASO DE ERRORES
+------------------------
+
+
+--ACTUALIZA LAS VERSIONES DE LAS DEPENDENCIAS CORRESPONDIENTE
+expo update
+
+--LIMPIA LA CACHE Y LUEGO ARRANCA EL PROYECTO
+expo start --clear
