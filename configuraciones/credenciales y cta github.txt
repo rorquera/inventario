@@ -1,0 +1,19 @@
+
+estudiante 2
+
+git config --global user.name "rorquera"
+git config --global user.email "arckanhell1@gmail.com"
+
+
+
+estudiante 1
+
+git config --global user.name "jhonaln"
+git config --global user.email "jhonaln@gmail.com"
+
+arckanhell1
+
+--------------------------------------------------------------------
+jhonaln
+arckanhell1
+jhonaln1985@gmail.com

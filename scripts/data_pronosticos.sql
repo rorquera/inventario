@@ -1,0 +1,179 @@
+--REGISTRO DE EQUIPOS
+INSERT INTO
+	PUBLIC.T_EQUIPO (CODIGO, NOMBRE)
+VALUES
+	('032', 'Argentina');
+
+INSERT INTO
+	PUBLIC.T_EQUIPO (CODIGO, NOMBRE)
+VALUES
+	('068', 'Bolivia');
+
+INSERT INTO
+	PUBLIC.T_EQUIPO (CODIGO, NOMBRE)
+VALUES
+	('076', 'Brasil');
+
+INSERT INTO
+	PUBLIC.T_EQUIPO (CODIGO, NOMBRE)
+VALUES
+	('124', 'Canada');
+
+INSERT INTO
+	PUBLIC.T_EQUIPO (CODIGO, NOMBRE)
+VALUES
+	('152', 'Chile');
+
+INSERT INTO
+	PUBLIC.T_EQUIPO (CODIGO, NOMBRE)
+VALUES
+	('170', 'Colombia');
+
+INSERT INTO
+	PUBLIC.T_EQUIPO (CODIGO, NOMBRE)
+VALUES
+	('188', 'Costa Rica');
+
+INSERT INTO
+	PUBLIC.T_EQUIPO (CODIGO, NOMBRE)
+VALUES
+	('218', 'Ecuador');
+
+INSERT INTO
+	PUBLIC.T_EQUIPO (CODIGO, NOMBRE)
+VALUES
+	('840', 'Estados Unidos');
+
+INSERT INTO
+	PUBLIC.T_EQUIPO (CODIGO, NOMBRE)
+VALUES
+	('388', 'Jamaica');
+
+INSERT INTO
+	PUBLIC.T_EQUIPO (CODIGO, NOMBRE)
+VALUES
+	('484', 'Mexico');
+
+INSERT INTO
+	PUBLIC.T_EQUIPO (CODIGO, NOMBRE)
+VALUES
+	('591', 'Panama');
+
+INSERT INTO
+	PUBLIC.T_EQUIPO (CODIGO, NOMBRE)
+VALUES
+	('600', 'Paraguay');
+
+INSERT INTO
+	PUBLIC.T_EQUIPO (CODIGO, NOMBRE)
+VALUES
+	('604', 'Peru');
+
+INSERT INTO
+	PUBLIC.T_EQUIPO (CODIGO, NOMBRE)
+VALUES
+	('858', 'Uruguay');
+
+INSERT INTO
+	PUBLIC.T_EQUIPO (CODIGO, NOMBRE)
+VALUES
+	('862', 'Venezuela');
+
+--REGISTRO DE PARTIDOS
+INSERT INTO
+	PUBLIC.T_PARTIDO (EQUIPO_A, EQUIPO_B, FECHA)
+VALUES
+	('218', '862', '22/06/2024 10:00');
+
+INSERT INTO
+	PUBLIC.T_PARTIDO (EQUIPO_A, EQUIPO_B, FECHA)
+VALUES
+	('218', '388', '26/06/2024 10:00');
+
+INSERT INTO
+	PUBLIC.T_PARTIDO (EQUIPO_A, EQUIPO_B, FECHA)
+VALUES
+	('218', '484', '30/06/2024 10:00');
+
+INSERT INTO
+	PUBLIC.T_PARTIDO (EQUIPO_A, EQUIPO_B, FECHA)
+VALUES
+	('388', '862', '30/06/2024 14:00');
+
+INSERT INTO
+	PUBLIC.T_PARTIDO (EQUIPO_A, EQUIPO_B, FECHA)
+VALUES
+	('068', '591', '01/07/2024 14:00');
+
+INSERT INTO
+	PUBLIC.T_PARTIDO (EQUIPO_A, EQUIPO_B, FECHA)
+VALUES
+	('840', '858', '01/07/2024 16:00');
+
+INSERT INTO
+	PUBLIC.T_PARTIDO (EQUIPO_A, EQUIPO_B, FECHA)
+VALUES
+	('076', '170', '02/07/2024 10:00');
+
+INSERT INTO
+	PUBLIC.T_PARTIDO (EQUIPO_A, EQUIPO_B, FECHA)
+VALUES
+	('188', '600', '02/07/2024 14:00');
+
+INSERT INTO
+	PUBLIC.T_PARTIDO (EQUIPO_A, EQUIPO_B, FECHA)
+VALUES
+	('032', '218', '04/07/2024 14:00');
+
+INSERT INTO
+	PUBLIC.T_PARTIDO (EQUIPO_A, EQUIPO_B, FECHA)
+VALUES
+	('862', '124', '05/07/2024 14:00');
+
+--REGISTRO DE USUARIOS
+INSERT INTO
+	PUBLIC.T_USUARIO (CEDULA, NOMBRE, APELLIDO)
+VALUES
+	('1725456895', 'MARGARITA', 'MONTENEGRO');
+INSERT INTO
+	PUBLIC.T_USUARIO (CEDULA, NOMBRE, APELLIDO)
+VALUES
+	('1745254785', 'ROLANDO', 'ORQUERA');
+INSERT INTO
+	PUBLIC.T_USUARIO (CEDULA, NOMBRE, APELLIDO)
+VALUES
+	('1754623518', 'JULIO', 'PEREZ');
+
+--REGISTRO DE PRONOSTICO
+INSERT INTO public.t_pronostico(
+	usuario, partido, equipo_a, equipo_b, marcador_eq_a, marcador_eq_b)
+	VALUES ('1725456895', 1, '218', '862', 1, 2);
+INSERT INTO public.t_pronostico(
+	usuario, partido, equipo_a, equipo_b, marcador_eq_a, marcador_eq_b)
+	VALUES ('1725456895', 4, '388', '862', 3, 2);
+INSERT INTO public.t_pronostico(
+	usuario, partido, equipo_a, equipo_b, marcador_eq_a, marcador_eq_b)
+	VALUES ('1725456895', 5, '068', '591', 1, 1);
+
+INSERT INTO public.t_pronostico(
+	usuario, partido, equipo_a, equipo_b, marcador_eq_a, marcador_eq_b)
+	VALUES ('1745254785', 2, '218', '388', 2, 1);
+INSERT INTO public.t_pronostico(
+	usuario, partido, equipo_a, equipo_b, marcador_eq_a, marcador_eq_b)
+	VALUES ('1745254785', 7, '076', '170', 2, 1);
+INSERT INTO public.t_pronostico(
+	usuario, partido, equipo_a, equipo_b, marcador_eq_a, marcador_eq_b)
+	VALUES ('1745254785', 8, '188', '600', 2, 1);
+
+INSERT INTO public.t_pronostico(
+	usuario, partido, equipo_a, equipo_b, marcador_eq_a, marcador_eq_b)
+	VALUES ('1754623518', 3, '218', '484', 2, 1);
+INSERT INTO public.t_pronostico(
+	usuario, partido, equipo_a, equipo_b, marcador_eq_a, marcador_eq_b)
+	VALUES ('1754623518', 9, '032', '218', 2, 1);
+INSERT INTO public.t_pronostico(
+	usuario, partido, equipo_a, equipo_b, marcador_eq_a, marcador_eq_b)
+	VALUES ('1754623518', 8, '188', '600', 2, 1);
+
+
+	
