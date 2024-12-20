@@ -1,0 +1,39 @@
+"cambio de usuario local y correo"
+git config --global user.name "[New Name]"
+git config --global user.email "[New Email]"
+
+"traer datos desde el origen a la rama main"
+	git pull origin main
+
+"fatal: refusing to merge unrelated histories" => el historial de commit del repositorio local no tiene nada que ver con el historial de commit del escritorio remoto
+	git pull -f origin main --allow-unrelated-histories
+
+"enviar lo que tenga en el origen al main"
+	git push origin main
+
+"inicializar un directorio para ser un repositorio local git"
+	git init 
+
+"hacer referencia de un repositorio local git creado a un repositorio remoto en gihub"
+	git remote add origin <url del repositorio remoto>
+	git remote add origin https://github.com/rorquera/javaRest.git
+
+"ver las referencias a los repositorios remotos"
+	git remote -v
+
+"fatal: The current branch main has no upstream branch" => pasa cuando no se tiene una rama principal para hacer push
+	git push --set-upstream origin main => envia de origin a main tomando como rama principal a main
+
+".gitignore"
+test.js => ignora el archivo test.js
+configuraciones/ => ignora la carpeta configuraciones y todo lo que esta dentro
+*.orig.* => ignora todo nombre de archivo que contenga .orig
+*.key => ignora todo todo nombre de archivo que contenga al final .key
+
+-----------------
+
+accept current change => acepta cambio que se tiene en el repositorio local
+accept incoming change => acepta cambio que viene del repositorio remoto
+accept both change => acepta ambos cambios
+
+
